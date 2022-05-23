@@ -38,9 +38,6 @@ namespace Behavioral.Iterator.TreeTreversal
             while (Current.Left != null)
                 Current = Current.Left;
         }
-
-
-
         public void Reset()
         {
             Current = root;
@@ -148,6 +145,8 @@ namespace Behavioral.Iterator.TreeTreversal
             // duck typing!
             foreach (var node in tree)
                 WriteLine(node.Value);
+
+            ReadKey();
         }
     }
 }
